@@ -7,39 +7,40 @@
     tools:context=".Activity_login">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtUsuariologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Usuário"
         android:inputType="textPersonName"
-        android:text="Name"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="295dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtSenhalogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Senha"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="388dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtBemvindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Login"
+        android:text="Bem-Vindo(a)"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="185dp" />
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="177dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEntrarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Entrar"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="598dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
