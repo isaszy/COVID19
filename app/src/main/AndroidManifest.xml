@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_login"></activity>
+        <activity android:name=".Activity_resultadoscanner"></activity>
+        <activity android:name=".Activity_scanner" />
+        <activity android:name=".Activity_login" />
         <activity android:name=".Activity_cadastro" />
         <activity android:name=".MainActivity">
             <intent-filter>
