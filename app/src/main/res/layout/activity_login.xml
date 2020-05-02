@@ -29,9 +29,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="166dp" />
+        android:fontFamily="sans-serif-black"
+        android:text="Login"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="185dp" />
 
     <Button
         android:id="@+id/button"
