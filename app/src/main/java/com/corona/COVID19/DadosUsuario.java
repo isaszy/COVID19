@@ -14,14 +14,17 @@ public class DadosUsuario implements Serializable {
     private String Senha;
 
     public Integer getId() {
+
         return Id;
     }
 
     public void setId(Integer id) {
+
         Id = id;
     }
 
     public String getNome() {
+
         return Nome;
     }
 
@@ -41,6 +44,7 @@ public class DadosUsuario implements Serializable {
     }
 
     public String getIdade() {
+
         return Idade;
     }
 
@@ -55,6 +59,7 @@ public class DadosUsuario implements Serializable {
     }
 
     public void setN_SUS(String n_SUS) {
+
         N_SUS = n_SUS;
     }
 
@@ -69,6 +74,7 @@ public class DadosUsuario implements Serializable {
     }
 
     public String getSenha() {
+
         return Senha;
     }
 
