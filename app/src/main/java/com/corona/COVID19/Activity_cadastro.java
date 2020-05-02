@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Activity_cadastro extends AppCompatActivity {
 
@@ -14,6 +15,9 @@ public class Activity_cadastro extends AppCompatActivity {
     private EditText n_SUS;
     private EditText diabete;
     private EditText senha;
+
+    private DaoUser dao;
+
 
 
     @Override
@@ -28,6 +32,8 @@ public class Activity_cadastro extends AppCompatActivity {
         diabete = findViewById(R.id.edtDiabete);
         senha = findViewById(R.id.edtSenha);
 
+        dao = new DaoUser(this);
+
     }
 
     public void salvar(View view){
@@ -38,6 +44,7 @@ public class Activity_cadastro extends AppCompatActivity {
         user.setIdade(idade.getText().toString());
         user.setN_SUS(n_SUS.getText().toString());
         user.setDiabete(diabete.getText().toString());
-
+        long id = dao.inserir(user);
+        Toast.makeText(this, "Usuário cadastrado com o id: " + id, Toast.LENGTH_SHORT).show();
     }
 }

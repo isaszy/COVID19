@@ -11,7 +11,7 @@ public class DaoUser {
     private SQLiteDatabase banco;
 
 
-    public void UserDao(Context context){
+    public DaoUser(Context context){
         conexao  = new Conexao(context);
         banco = conexao.getWritableDatabase();
     }
