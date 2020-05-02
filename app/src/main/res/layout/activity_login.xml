@@ -7,12 +7,11 @@
     tools:context=".Activity_login">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="295dp" />
 
