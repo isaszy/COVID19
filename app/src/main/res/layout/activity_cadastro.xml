@@ -6,30 +6,122 @@
     android:layout_height="match_parent"
     tools:context=".Activity_cadastro">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="99dp" />
-
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="192dp" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="112dp" />
 
-    <Button
-        android:id="@+id/button2"
+    <EditText
+        android:id="@+id/edtIdade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="655dp" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/txtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <EditText
+        android:id="@+id/edtSUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <TextView
+        android:id="@+id/txtN_SUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N° Cartão do SUS"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <TextView
+        android:id="@+id/txtDiabete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Possui diabete?"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <EditText
+        android:id="@+id/edtDiabete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="458dp" />
+
+    <TextView
+        android:id="@+id/txtRespiratorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Possui algum problema respiratorio agudo?"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <TextView
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="582dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
