@@ -23,6 +23,6 @@ public class DaoUser {
         values.put("Idade", user.getIdade());
         values.put("N_SUS", user.getN_SUS());
         values.put("Diabete", user.getN_SUS());
-        return banco.insert("DadosUsuario", null, values)
+        return banco.insert("DadosUsuario", null, values);
     }
 }
