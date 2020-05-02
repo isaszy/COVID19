@@ -4,24 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#82F7FF"
+    android:hapticFeedbackEnabled="false"
     tools:context=".Activity_login">
-
-    <EditText
-        android:id="@+id/edtUsuariologin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:ems="10"
-        android:hint="Usuário"
-        android:inputType="textPersonName"
-        android:shadowColor="#000000"
-        android:textColor="#000000"
-        android:textColorHighlight="#3F51B5"
-        android:textColorHint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/edtSenhalogin"
-        app:layout_constraintEnd_toEndOf="@+id/txtBemvindo"
-        app:layout_constraintStart_toStartOf="@+id/txtBemvindo"
-        app:layout_constraintTop_toBottomOf="@+id/txtBemvindo" />
 
     <EditText
         android:id="@+id/edtSenhalogin"
@@ -33,9 +18,10 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btnEntrarLogin"
-        app:layout_constraintEnd_toEndOf="@+id/edtUsuariologin"
-        app:layout_constraintStart_toStartOf="@+id/edtUsuariologin"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsuariologin" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
 
     <TextView
         android:id="@+id/txtBemvindo"
@@ -47,15 +33,15 @@
         android:textColor="#004D40"
         android:textIsSelectable="true"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/edtUsuariologin"
+        app:layout_constraintBottom_toTopOf="@+id/edtUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/btnEntrarLogin"
-        android:layout_width="0dp"
+        android:layout_width="213dp"
         android:layout_height="wrap_content"
         android:background="#39796B"
         android:shadowColor="#000000"
@@ -64,8 +50,34 @@
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtSenhalogin"
-        app:layout_constraintStart_toStartOf="@+id/edtSenhalogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtSenhalogin" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuário"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/edtSenhalogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBemvindo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="143dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBemvindo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_scan_covid_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

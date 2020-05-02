@@ -4,15 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#004D40"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="seila"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="609dp"
+        android:layout_height="685dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCreditos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_scan_covid_foreground" />
 
+    <TextView
+        android:id="@+id/txtCreditos"
+        android:layout_width="388dp"
+        android:layout_height="41dp"
+        android:text="Desenvolvido por: Anderson Machado e Isabel Melo.  "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtGithub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="77dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_github" />
+
+    <TextView
+        android:id="@+id/txtGithub"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:text=" @anderson361163  @Isaszy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
