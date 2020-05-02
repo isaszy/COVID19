@@ -7,36 +7,65 @@
     tools:context=".Activity_login">
 
     <EditText
-        android:id="@+id/txtNome"
+        android:id="@+id/edtUsuariologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
         android:ems="10"
+        android:hint="Usuário"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="295dp" />
+        android:shadowColor="#000000"
+        android:textColor="#000000"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/edtSenhalogin"
+        app:layout_constraintEnd_toEndOf="@+id/txtBemvindo"
+        app:layout_constraintStart_toStartOf="@+id/txtBemvindo"
+        app:layout_constraintTop_toBottomOf="@+id/txtBemvindo" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtSenhalogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Senha"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="388dp" />
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrarLogin"
+        app:layout_constraintEnd_toEndOf="@+id/edtUsuariologin"
+        app:layout_constraintStart_toStartOf="@+id/edtUsuariologin"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuariologin" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtBemvindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="166dp" />
+        android:fontFamily="sans-serif-black"
+        android:text="Bem-Vindo(a)!"
+        android:textAllCaps="false"
+        android:textColor="#004D40"
+        android:textIsSelectable="true"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtUsuariologin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnEntrarLogin"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="598dp" />
+        android:background="#39796B"
+        android:shadowColor="#000000"
+        android:text="Entrar"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtSenhalogin"
+        app:layout_constraintStart_toStartOf="@+id/edtSenhalogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenhalogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
