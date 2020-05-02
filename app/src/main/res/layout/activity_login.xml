@@ -44,6 +44,7 @@
         android:layout_width="213dp"
         android:layout_height="wrap_content"
         android:background="#39796B"
+        android:onClick="entrar"
         android:shadowColor="#000000"
         android:text="Entrar"
         android:textColor="#000000"
@@ -79,5 +80,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_scan_covid_foreground" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="151dp"
+        android:onClick="cadastrar"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBemvindo"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="155dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
