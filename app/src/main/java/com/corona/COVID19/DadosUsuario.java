@@ -1,6 +1,9 @@
 package com.corona.COVID19;
 
-public class DadosUsuario {
+import java.io.Serializable;
+
+
+public class DadosUsuario implements Serializable {
 
     private Integer Id;
     private String Nome;
@@ -23,14 +26,17 @@ public class DadosUsuario {
     }
 
     public void setNome(String nome) {
+
         Nome = nome;
     }
 
     public String getTelefone() {
+
         return Telefone;
     }
 
     public void setTelefone(String telefone) {
+
         Telefone = telefone;
     }
 
@@ -39,10 +45,12 @@ public class DadosUsuario {
     }
 
     public void setIdade(String idade) {
+
         Idade = idade;
     }
 
     public String getN_SUS() {
+
         return N_SUS;
     }
 
@@ -51,10 +59,12 @@ public class DadosUsuario {
     }
 
     public String getDiabete() {
+
         return Diabete;
     }
 
     public void setDiabete(String diabete) {
+
         Diabete = diabete;
     }
 
@@ -63,6 +73,7 @@ public class DadosUsuario {
     }
 
     public void setSenha(String senha) {
+
         Senha = senha;
     }
 
