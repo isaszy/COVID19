@@ -18,9 +18,8 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btnEntrarLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtUsuario"
+        app:layout_constraintStart_toStartOf="@+id/edtUsuario"
         app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
 
     <TextView
@@ -34,14 +33,13 @@
         android:textIsSelectable="true"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/edtUsuario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/btnEntrarLogin"
-        android:layout_width="213dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#39796B"
         android:onClick="entrar"
@@ -50,10 +48,9 @@
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtCadastroNaTelaLogin"
+        app:layout_constraintEnd_toEndOf="@+id/edtSenhalogin"
+        app:layout_constraintStart_toStartOf="@+id/edtSenhalogin"
         app:layout_constraintTop_toBottomOf="@+id/edtSenhalogin" />
 
     <EditText
@@ -65,9 +62,8 @@
         android:inputType="textPersonName"
         android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/edtSenhalogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtBemvindo"
+        app:layout_constraintStart_toStartOf="@+id/txtBemvindo"
         app:layout_constraintTop_toBottomOf="@+id/txtBemvindo" />
 
     <ImageView
@@ -81,15 +77,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_scan_covid_foreground" />
 
+    <TextView
+        android:id="@+id/txtCadastroNaTelaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não possui uma conta? Cadastre-se."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarLogin"
+        app:layout_constraintEnd_toEndOf="@+id/btnEntrarLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnEntrarLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarLogin" />
+
     <Button
-        android:id="@+id/btnCadastrar"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="151dp"
-        android:onClick="cadastrar"
+        android:id="@+id/btnCadastrarLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#39796B"
         android:text="Cadastrar"
-        app:layout_constraintBottom_toBottomOf="@+id/txtBemvindo"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        tools:layout_editor_absoluteX="155dp" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtCadastroNaTelaLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtCadastroNaTelaLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastroNaTelaLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
