@@ -4,166 +4,178 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#82F7FF"
     tools:context=".Activity_cadastro">
+
+    <EditText
+        android:id="@+id/edtUsuarioCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuário"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/edtSenhaCadasro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swtPRespiratorio" />
 
     <EditText
         android:id="@+id/edtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="39dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/edtTelefone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtNome" />
-
-    <EditText
-        android:id="@+id/edtIdade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtSUS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtIdade" />
-
-    <Button
-        android:id="@+id/btnCadastrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="salvar"
-        android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="655dp" />
-
-    <EditText
-        android:id="@+id/edtTelefone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="47dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtIdade"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtTelefone" />
+        app:layout_constraintStart_toEndOf="@+id/txtNome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
 
     <TextView
         android:id="@+id/txtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="62dp"
         android:text="Nome"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/txtTelefone"
         app:layout_constraintEnd_toStartOf="@+id/edtNome"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
 
-    <TextView
-        android:id="@+id/txtTelefone"
+    <EditText
+        android:id="@+id/edtIdade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="74dp"
-        android:text="Telefone"
-        app:layout_constraintBottom_toTopOf="@+id/txtIdade"
-        app:layout_constraintEnd_toStartOf="@+id/edtTelefone"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTelefone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTelefone"
+        tools:layout_editor_absoluteY="201dp" />
 
     <TextView
         android:id="@+id/txtIdade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
         android:text="Idade"
-        app:layout_constraintBottom_toTopOf="@+id/txtN_SUS"
-        app:layout_constraintEnd_toStartOf="@+id/edtIdade"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTelefone"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/txtTelefone"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#39796B"
+        android:onClick="salvar"
+        android:text="Cadastrar"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNome"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="@+id/txtNome"
+        tools:layout_editor_absoluteY="147dp" />
 
     <EditText
         android:id="@+id/edtSUS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="39dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtDiabete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtN_SUS" />
+        app:layout_constraintEnd_toEndOf="@+id/edtIdade"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtIdade"
+        tools:layout_editor_absoluteY="278dp" />
 
     <TextView
         android:id="@+id/txtN_SUS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:text="N° Cartão do SUS"
-        app:layout_constraintBottom_toTopOf="@+id/txtDiabete"
-        app:layout_constraintEnd_toStartOf="@+id/edtSUS"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtDiabete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="51dp"
-        android:text="Possui diabete?"
-        app:layout_constraintBottom_toTopOf="@+id/txtRespiratorio"
-        app:layout_constraintEnd_toStartOf="@+id/edtDiabete"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Cartão do SUS"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtIdade"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="@+id/txtIdade"
+        tools:layout_editor_absoluteY="299dp" />
 
     <EditText
-        android:id="@+id/edtDiabete"
+        android:id="@+id/edtSenhaCadasro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Senha"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/txtRespiratorio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtDiabete" />
-
-    <TextView
-        android:id="@+id/txtRespiratorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Possui algum problema respiratorio agudo?"
-        app:layout_constraintBottom_toTopOf="@+id/edtSenha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Senha:"
-        app:layout_constraintEnd_toStartOf="@+id/edtSenha"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edtSenha" />
-
-    <EditText
-        android:id="@+id/edtSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtUsuarioCadastro"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtSenha" />
+        app:layout_constraintStart_toStartOf="@+id/edtUsuarioCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuarioCadastro" />
+
+    <Switch
+        android:id="@+id/swtDiabetes"
+        android:layout_width="333dp"
+        android:layout_height="47dp"
+        android:background="#00FFFFFF"
+        android:text="Possui diabetes?      "
+        android:textColor="#000000"
+        android:textOff="Não"
+        android:textOn="Sim"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/swtPRespiratorio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSUS" />
+
+    <Switch
+        android:id="@+id/swtPRespiratorio"
+        android:layout_width="333dp"
+        android:layout_height="47dp"
+        android:text="Possui algum problema respiratório?"
+        android:textColor="#000000"
+        android:textOff="Não"
+        android:textOn="Sim"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtUsuarioCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/swtDiabetes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/swtDiabetes"
+        app:layout_constraintTop_toBottomOf="@+id/swtDiabetes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
