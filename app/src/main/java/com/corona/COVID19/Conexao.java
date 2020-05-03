@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class Conexao extends SQLiteOpenHelper {
 
-    private static final String banco = "bancoUser";
+    private static final String banco = "bdCorona";
     private static final int version = 1;
 
 
@@ -25,6 +25,11 @@ public class Conexao extends SQLiteOpenHelper {
                 "N_SUS varchar(25)," +
                 "Diabete varchar(3)," +
                 "Senha varchar(20))");
+
+        db.execSQL("CREATE TABLE dadosLocalizacao(" +
+                "id integer primary key autoincrement," +
+                "x varchar(70)," +
+                "y varchar(20)");
 
     }
 

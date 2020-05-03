@@ -94,6 +94,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#39796B"
+        android:onClick="cadastrar"
         android:shadowColor="#000000"
         android:text="Cadastrar"
         android:textColor="#000000"
